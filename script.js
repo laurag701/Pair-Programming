@@ -1,3 +1,4 @@
+//Easy(1)
 function oddEvenArr (arr) {
     let odd = [];
     let even = [];
@@ -18,3 +19,14 @@ function oddEvenArr (arr) {
     return returnNum;
 }
 console.log(oddEvenArr([2, 4, 7, 11, 15, 16]));
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Medium(1)
+function vowelChecker (x) {
+    if (x == "a" || x == "e" || x == "i" || x == "o" || x == "u") {
+        console.log ("This is a vowel");
+    } else {
+        console.log("This is not a vowel");
+    }
+}
+vowelChecker("a"); //This is a vowel
+vowelChecker("b"); //This is not a vowel
