@@ -28,7 +28,7 @@ function isPrime(num) {
     return num > 1;
 }
 console.log(isPrime( 2, 3, 4, 5, 6, 7, 8, 9, 10));
-
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Medium(1)
 function vowelChecker (x) {
     if (x == "a" || x == "e" || x == "i" || x == "o" || x == "u") {
@@ -39,3 +39,13 @@ function vowelChecker (x) {
 }
 vowelChecker("a"); //This is a vowel
 vowelChecker("b"); //This is not a vowel
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Medium(3)
+var gcd = function (a, b) {
+    if (b == 0) {
+        return a;
+    }
+    return gcd(b, a % b)
+}
+
+console.log(gcd(336,360));
