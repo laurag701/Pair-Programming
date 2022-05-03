@@ -51,3 +51,7 @@ var gcd = function (a, b) {
 }
 
 console.log(gcd(336,360));
+
+
+
+Laura something something
