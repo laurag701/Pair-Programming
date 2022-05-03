@@ -20,6 +20,15 @@ function oddEvenArr (arr) {
 }
 console.log(oddEvenArr([2, 4, 7, 11, 15, 16]));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//Easy(2)
+function isPrime(num) {
+    for (let i = 2; i < num; i ++)
+    if (num % i === 0)
+    return false;
+    return num > 1;
+}
+console.log(isPrime( 2, 3, 4, 5, 6, 7, 8, 9, 10));
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Medium(1)
 function vowelChecker (x) {
     if (x == "a" || x == "e" || x == "i" || x == "o" || x == "u") {
