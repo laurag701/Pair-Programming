@@ -30,3 +30,15 @@ function vowelChecker (x) {
 }
 vowelChecker("a"); //This is a vowel
 vowelChecker("b"); //This is not a vowel
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Medium(3)
+var gcd = function (a, b) {
+    if (b == 0) {
+        return a;
+    }
+    return gcd(b, a % b)
+}
+
+console.log(gcd(336,360));
