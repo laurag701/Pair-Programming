@@ -66,3 +66,33 @@ var gcd = function (a, b) {
 }
 
 console.log(gcd(336,360));
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+//Medium(4)
+class Car {
+    constructor() {
+    this.Mileage = 33;
+    
+    }
+
+    driveToWork() {
+        this.Mileage += 10;
+        console.log("New mileage after driving to work: ");
+    }
+
+    driveAroundTheWorld() {
+        this.Mileage += 50;
+        console.log("New mileage after driving around the world: ");
+    }
+
+    runErrands() {
+        this.Mileage += 20;
+        console.log("New mileage after running errands: ");
+    }
+}
+let car = new Car ();
+
+car.driveToWork();
+car.driveAroundTheWorld();
+car.runErrands();
