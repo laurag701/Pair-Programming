@@ -42,6 +42,21 @@ vowelChecker("b"); //This is not a vowel
 
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+//Medium(2)
+function isAnagram (a, b) {
+    let string1 = a.replaceAll(' ', '').toLowerCase().split('').sort().join('')
+    let string2 = b.replaceAll(' ', '').toLowerCase().split('').sort().join('')
+    if (string1 === string2) {
+        console.log(`${string1} and ${string2} are anagrams`);
+        return
+    } else {
+        console.log(`${string1} and ${string2} are not angrams`);
+        return
+    }
+}
+console.log(isAnagram('race', 'care')); //acer and acer are anagrams
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 //Medium(3)
 var gcd = function (a, b) {
     if (b == 0) {
@@ -51,7 +66,3 @@ var gcd = function (a, b) {
 }
 
 console.log(gcd(336,360));
-
-
-
-Laura something something
