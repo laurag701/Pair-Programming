@@ -21,13 +21,32 @@ function oddEvenArr (arr) {
 console.log(oddEvenArr([2, 4, 7, 11, 15, 16]));
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Easy(2)
-function isPrime(num) {
-    for (let i = 2; i < num; i ++)
-    if (num % i === 0)
-    return false;
-    return num > 1;
-}
-console.log(isPrime( 2, 3, 4, 5, 6, 7, 8, 9, 10));
+function checkPrime(num) {
+         if (num <= 1 ) {
+             return false;
+         }
+         else {
+            for (let i = 2; i < num; i++) {
+                if (num % i == 0 ){
+                    return false;
+                }
+            }
+            return true;
+         }
+        }
+
+
+         let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10];
+
+
+         arr.forEach(function (element) {
+            const isPrime = checkPrime(element);
+            if (isPrime) {
+              console.log(`numArray:[${element}]`);
+            } else {
+              console.log(`primeArray[${element}]`);
+            }
+          });
 //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //Medium(1)
 function vowelChecker (x) {
@@ -96,3 +115,19 @@ let car = new Car ();
 car.driveToWork();
 car.driveAroundTheWorld();
 car.runErrands();
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+//Hard
+function takeString (str) {
+    if (str.includes("{") && str.includes("}")) {
+        return true;
+    } else if (str.includes("[") && str.includes("]")) {
+        return true;
+    } else if (str.includes("(") && str.includes(")")) {
+        return true;
+    } else {
+        return false
+    }
+}
+console.log(takeString("(Hello)"));
